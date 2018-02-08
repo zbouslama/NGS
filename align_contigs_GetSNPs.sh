@@ -12,7 +12,7 @@ do
     echo "########### Aligning the contigs"
     nucmer  -p $filename  $refgenome  $line
     echo "########## Generate SNP file"   
-    show-snps "${filename}.delta" >"${filename}.snp" 
+    show-snps -CHIlrT "${filename}.delta" >"${filename}.snp" 
     echo "                  "
     mv "${filename}.delta" $dirname
     mv "${filename}.snp" $dirname
