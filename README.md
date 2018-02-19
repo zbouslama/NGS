@@ -34,7 +34,7 @@ The other script `ConcatSNPsMummer.py` concatenates the SNPs from each mummer sn
 
 usage :
 
-``` python
+``` bash
 $ python ConcatSNPsMummer.py LIST
 ```
 `LIST` is a list contains the path to the SNP table for each line.
