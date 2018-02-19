@@ -1,6 +1,7 @@
 ## NGS 
 
 This script allow to use mummer contigs alignment with different samples aligned to a reference genome. 
+The first code `align_contigs_GetSNPs.sh.sh`, allows to assemble contigs using `nucmer` and generates a variant tab delimited file (headers + SNV), with options `-CHIlrT`. 
 
 ##### Usage
 
@@ -29,4 +30,20 @@ Source code for mummer and instructions to install the software can be found [he
  [here](https://github.com/mummer4/mummer/blob/master/INSTALL.md). 
 
 
+The other script `ConcatSNPsMummer.py` concatenates the SNPs from each mummer snp table into a FASTA like file and outputs the results to STDOUT.
 
+usage :
+
+``` python
+$ python ConcatSNPsMummer.py LIST
+```
+`LIST` is a list contains the path to the SNP table for each line.
+exemple:
+
+```
+/somedir1/somedir2/sample1.snp
+../somedir3/sample2.snp
+./somedir4/sample3.snp
+
+```
+The contigs must be assembled from the same reference genome. Otherwise you will get wrong results. 
