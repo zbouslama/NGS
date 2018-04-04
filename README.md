@@ -8,6 +8,7 @@ The first code `align_contigs_GetSNPs.sh.sh`, allows to assemble contigs using `
 ```bash
 $ ./align_contigs_GetSNPs.sh.sh filelist ref_geneome
 ```
+zied was here
 
 `filelist` contains a list of the paths to the sample genome filename in FASTA format. 
 Exemple:
